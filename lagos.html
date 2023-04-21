@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bs.css">
+  
+  <title>Hotels in Lagos</title>
+</head>
+
+<body>
+  <!-- Nav Bar Div -->
+  <nav class="nav">
+    <a class="logoImg" href="./">Hotels.ng</a>
+    <a href="#">
+      <img class="whatsapp-icon" src="./img/whatsapp-icon.svg" alt="whatsapp icon" srcset="" />
+    </a>
+    <div class="dropdown">
+      <div class="support">
+        <img src="./img/navbar-contact-min.jpg" alt="support">
+        <span id="supportDropdownButton" role="button">
+          <span class="support-text">You can call us to book your hotel</span>
+          <p>
+            <span id="tel" href="tel:+">+234 700 880 8800
+              <i class="fa fa-caret-down"></i>
+            </span>
+          </p>
+        </span>
+      </div>
+      <div>
+        <div class="dropdown-menu">
+          <p class="dropdown-item">
+            <i class="fa-brands fa-whatsapp"></i>
+            <a id="tel" href="tel:+">+234 700 880 8800</a>
+          </p>
+          <p class="dropdown-item">
+            <i class="fa-solid fa-phone"></i>
+            <a id="tel" href="tel:+">+234 700 880 8800</a>
+          </p>
+          <p class="dropdown-item">
+            <i class="fa-solid fa-phone"></i>
+            <a id="tel" href="tel:+">+234 700 880 8800</a>
+          </p>
+          <p class="dropdown-item">
+            <i class="fa-solid fa-phone"></i>
+            <a id="tel" href="tel:+">+234 700 880 8800</a>
+          </p>
+          <p class="dropdown-item">
+            <i class="fa-brands fa-skype"></i>
+            <a id="tel" href="tel:+">+234 700 880 8800</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="div dropdown">
+      <div class="currency">
+        <img src="./img/nigeria-flag.png" width="32px" height="23px">
+        <i class="fa-solid fa-naira-sign"></i>
+        <i class="fa fa-caret-down"></i>
+      </div>
+      <div class="dropdown-menu" id="currency-drop">
+        <p>Choose your prefared currency for the hotel rates: </p>
+        <p class="dropdown-item">Nigerian Naira</p>
+        <p class="dropdown-item">European Euro</p>
+        <p class="dropdown-item">U.S Dollar</p>
+        <p class="dropdown-item">British Pounds Sterling</p>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <div class="account" role="button">
+        <img src="img/user-avatar.svg" alt="user" width="30px" height="35px">
+        <span>Account</span>
+        <i class="fa fa-caret-down"></i>
+      </div>
+      <div class="account-dropdown-menu">
+        <p>Sign In to access exclusive members deals</p>
+        <button class=" btn btn-primary btn-block h-100">
+          <a href="./signin.html">Sign In</a>
+        </button>
+        <p>New here? <a href="#">Sign up</a></p>
+      </div>
+    </div>
+  </nav>
+
+  <!-- TODO: implement header title bar  -->
+  <div class="title-bar"></div>
+
+  <div class="inputSelect inputSelectLagos">
+    <div class="box">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" name="hotelSearch" id="" placeholder="Search for city or particular hotel" />
+    </div>
+    <input class="dateInput" type="date" name="checkin date" id="checkdate" />
+    <input class="btnInput" type="button" value="Find Hotels" />
+  </div>
+
+  <div class="lagos--container">
+    <section class="side-aisle">
+      <div class="stay-updated">
+        <h3>Stay updated with our latest rates</h3>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Enter email address" aria-label="Recipient's username"
+            aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-primary mx-auto d-block" type="button">Shortlet Apartments in Lagos</button>
+
+      <div class="listing-container">
+        <div class="listing-filter-header m--25">
+          <i class="fa-regular fa-bars-filter"></i>
+          <span>Search Filters</span>
+        </div>
+        <div class="listing-filter-box">
+          <label for="price-range" class="form-label">What is your budget per night?</label>
+          <p class="range-amount">
+            <span>From &#8358 0</span>
+            <span>To &#8358 40,000</span>
+          </p>
+          <input type="range" class="form-range" id="price-range">
+
+          <button class="btn btn-primary d-block mx-auto" type="button">Refine Search</button>
+
+        </div>
+      </div>
+    </section>
+    <main>b</main>
+  </div>
+
+</body>
+
+</html>
